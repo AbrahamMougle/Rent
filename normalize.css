@@ -29,10 +29,12 @@ pre, code, kbd, samp {
 
 a {
     background-color: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
-img {
-    border: none;
+ li {
+    list-style: none;
 }
 
 button, input, optgroup, select, textarea {
