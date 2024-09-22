@@ -12,7 +12,7 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0 50px;
-    
+    overflow-x: hidden;
 }
 
 section {
@@ -101,7 +101,7 @@ hr {
     width: 50px;
     height: 50px;
     border-radius: 20px;
-    margin-bottom: 15px; /* Espacement sous l'icône */
+    margin-bottom: 15px; 
 }
 .card-iconner i{
     font-size: 20px;
@@ -199,4 +199,57 @@ hr {
         margin: 12px auto;
     }
     
+}
+/* css pour carrousel*/
+.carte{
+    width: 400px;
+    background-color: red;
+    height: 100px;
+    float: left;
+}
+.carousel{
+     width: 250vw; 
+}
+.carousel::after {
+    content: "";
+    display: table;
+}
+.slider {
+    width: 100%; 
+    -webkit-appearance: none; 
+    appearance: none; 
+    height: 5px; 
+    background: var(--primary-color); 
+    position: relative; /* Nécessaire pour placer le pseudo-élément */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 10px; 
+    height: 10px; 
+    background: #007bff; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    margin-top: -3px; 
+}
+
+.slider::before {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    width: calc(100% - 20%); 
+    height: 5px; 
+    background: #ddd; 
+    transform: translateY(-50%); 
+    z-index: -1; 
+}
+.slider-container {
+    position: relative; 
+    width: 300px; 
+    margin-bottom: 20px; 
+}
+input[type="range"] {
+    outline: none; 
 }
