@@ -31,7 +31,7 @@ section {
     padding: 10px;
 }
 
-.container-image img {
+ img {
     width: 100%;
     height: auto;
     border-radius: 3%;
@@ -201,14 +201,12 @@ hr {
     
 }
 /* css pour carrousel*/
-.carte{
-    width: 400px;
-    background-color: red;
-    height: 100px;
+.carte{    
     float: left;
+    margin-left: 10px;
 }
 .carousel{
-     width: 250vw; 
+     width: 300vw; 
 }
 .carousel::after {
     content: "";
@@ -253,3 +251,73 @@ hr {
 input[type="range"] {
     outline: none; 
 }
+/* pour le blog */
+
+
+.blog {
+    position: relative;
+    width: 350px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.blog:hover {
+    transform: scale(1.02); 
+}
+
+.image-blog {
+    width: 100%; 
+    height: auto; 
+}
+
+.title-blog {
+    padding: 0 10px;
+    font-size: 1em; 
+    color: #333; 
+}
+
+.text-blog {
+    padding: 0 10px;
+    color: #555; 
+}
+
+.footer-blog {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    
+}
+
+.date-blog, .comment-blog {
+    font-size: 0.9em; 
+    color: rgb(179, 169, 169);
+}
+
+.clock-icon {
+    margin-right: 5px; 
+}
+
+.btn-position {
+    position: absolute; 
+    top: 45%; 
+    left: 14px;
+    padding: 10px 15px;    
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+}
+.slider-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 166px;
+   
+    
+}
+
+
