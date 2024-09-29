@@ -12,7 +12,7 @@ body {
     font-family: var(--font-family);
     color: var(--color-text);
     margin: 0;
-    padding: 0 50px;
+    padding: 0 20px;
     overflow-x: hidden;
     font-size: var(--font-size);
 }
@@ -27,7 +27,7 @@ section {
 .container-rent {
     background-color: var(--secondary-color);
     border: 1px solid white;
-    width: 310px;
+    width: 226px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -175,32 +175,12 @@ hr {
  }
 
  /* Styles pour les écrans de 768px et plus (tablettes) */
-@media (max-width: 567px) {
-    section{
+@media (max-width: 700px) {
+    
+    .container-card li{
         
-        display: block;
-      }
-    body{
-        padding: 0;
-
-    }
-    .container-rent{
-        margin: 12px auto;
-    }
-    .btn{
         width: 100%;
     }
-    .container-card{
-        display: block;
-        
-
-
-    }
-    .container-card li{
-        width: calc(100% - 20vw);
-        margin: 12px auto;
-    }
-    
 }
 /* css pour carrousel*/
 .carte{    
@@ -390,3 +370,64 @@ a:hover {
 .social-media a:hover {
     color: #007bff;
 }
+/*  header style */
+.header {
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+.header-bloc h1{
+    font-size: 40px;
+}
+
+.header-bloc {
+   flex: 1;
+}
+
+.header-image img {
+    max-width: 350px;
+    width: 300px;
+    height: 250px;
+    border-radius: 3%;
+}
+.input form{
+    display: flex;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+}
+
+label {
+    margin-bottom: 8px; 
+    color: #d2cece;
+    
+}
+.input{
+    position: absolute;
+    bottom: 20%;
+    background-color: var(--primary-color);
+    margin:10px 0;
+    z-index: 1;
+    
+}
+.input form input:focus{
+    border: 1px var(--btn-color) solid;
+    outline: none
+}
+
+
+.input form input {
+    padding: 10px 2px; 
+    border: 0px; 
+    border-radius: 4px; 
+   background-color: var(--primary-color);
+    
+}
+.header-input{
+    display: flex;
+}
+
