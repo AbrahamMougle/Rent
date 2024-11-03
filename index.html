@@ -1,11 +1,412 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=rent.html">
-    <title>Redirection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="Rent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <title>Location de Voitures</title>
 </head>
+
 <body>
-    <p>Redirection en cours vers <a href="rent.html">rent.html</a>...</p>
+
+
+    <!-- entete -->
+    <nav class="navbar">
+        <div class="navProfil">YbraRent</div>
+        <ul class="menu">
+            <li class="contact-info">
+                <div>+22963215162</div>
+                <span>Abraham</span>
+            </li>
+            <li>
+                <button class="btn">Explore</button>
+            </li>
+            <li class="card-iconner icon-5">
+                <i class="fas fa-user"></i>
+            </li>
+            <li class="hamburger-icon">
+                <i class="fas fa-bars"></i>
+            </li>
+        </ul>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Explore cars</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">blogs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="">
+
+        <div class="header">
+            <div class="header-bloc">
+                <h1>Le moyen facile de reprendre un bail</h1>
+                <p>Je vis à New York, dans le New Jersey et dans le Connecticut !</p>
+            </div>
+            <div class="header-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/9IXvV1vgRWizWTFuvUU9LA"
+                    alt="voiture de luxe">
+            </div>
+        </div>
+
+        <div class="input">
+            <form action="">
+                <div>
+                    <label for="car-search">Voiture, modèle ou marque</label>
+                    <input type="search" name="car" id="car-search" placeholder="Quelle voiture recherchée">
+                </div>
+                <div class="header-input">
+                    <div>
+                        <label for="car-cash">Paiement mensuel max.</label>
+                        <input type="search" name="car" id="car-cash" placeholder="Ajouter un montant">
+                    </div>
+                </div>
+                <div class="header-input">
+                    <div>
+                        <label for="car-search">Faire l'année</label>
+                        <input type="search" name="car" id="car-search" placeholder="Ajouter une annee">
+                    </div>
+                </div>
+                <button type="submit" class="btn">Recherche</button>
+
+        </div>
+        </form>
+        </div>
+
+    </header>
+    <div class="container-head">
+        <h1>Featured cars</h1>
+        <li class="view-more-icon">
+            <a href=""> View More
+                <span>&#x2192;</span></a>
+        </li>
+        
+    </div>
+
+    <section class="car-list">
+        
+        <div class="container-rent">
+            <div class="container-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/qSva_rQPQ5K3XNZc0jPH6g"
+                    alt="Toyota RAV4">
+            </div>
+            <div class="container-header">
+                <h3><a href="#">Toyota RAV4</a></h3>
+                <data value="year">2018</data>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-user-friends icon"></i><span>4 Personnes</span></li>
+                <li><i class="fas fa-tachometer-alt icon"></i><span>6,1 km / 1 litre</span></li>
+                <li><i class="fas fa-car icon"></i><span>Hybride</span></li>
+                <li><i class="fas fa-gas-pump icon"></i><span>Automatique</span></li>
+            </ul>
+            <hr>
+            <div class="container-header">
+                <p class="prix"><strong>440$</strong> / <span>mois</span></p>
+                <button><i class="far fa-heart icon"></i></button>
+            </div>
+            <button type="button" class="btn">Louer Maintenant</button>
+        </div>
+        <div class="container-rent">
+            <div class="container-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/oXBUFs2ASeanlWmKeuij8w"
+                    alt="Toyota RAV4">
+            </div>
+            <div class="container-header">
+                <h3><a href="#">Toyota RAV4</a></h3>
+                <data value="year">2018</data>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-user-friends icon"></i><span>4 Personnes</span></li>
+                <li><i class="fas fa-tachometer-alt icon"></i><span>6,1 km / 1 litre</span></li>
+                <li><i class="fas fa-car icon"></i><span>Hybride</span></li>
+                <li><i class="fas fa-gas-pump icon"></i><span>Automatique</span></li>
+            </ul>
+            <hr>
+            <div class="container-header">
+                <p class="prix"><strong>440$</strong> / <span>mois</span></p>
+                <button><i class="far fa-heart icon"></i></button>
+            </div>
+            <button type="button" class="btn">Louer Maintenant</button>
+        </div>
+
+
+        <div class="container-rent">
+            <div class="container-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/oXBUFs2ASeanlWmKeuij8w"
+                    alt="BMW Série 3">
+            </div>
+            <div class="container-header">
+                <h3><a href="#">BMW Série 3</a></h3>
+                <data value="year">2020</data>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-user-friends icon"></i><span>4 Personnes</span></li>
+                <li><i class="fas fa-tachometer-alt icon"></i><span>6,1 km / 1 litre</span></li>
+                <li><i class="fas fa-car icon"></i><span>Hybride</span></li>
+                <li><i class="fas fa-gas-pump icon"></i><span>Automatique</span></li>
+            </ul>
+            <hr>
+            <div class="container-header">
+                <p class="prix"><strong>440$</strong> / <span>mois</span></p>
+                <button><i class="far fa-heart icon"></i></button>
+            </div>
+            <button type="button" class="btn">Louer Maintenant</button>
+        </div>
+
+        <div class="container-rent">
+            <div class="container-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/91Ct-t33RH66R2OdMOIbzw"
+                    alt="Cadillac Escalade">
+            </div>
+            <div class="container-header">
+                <h3><a href="#">Cadillac Escalade</a></h3>
+                <data value="year">2020</data>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-user-friends icon"></i><span>4 Personnes</span></li>
+                <li><i class="fas fa-tachometer-alt icon"></i><span>6,1 km / 1 litre</span></li>
+                <li><i class="fas fa-car icon"></i><span>Hybride</span></li>
+                <li><i class="fas fa-gas-pump icon"></i><span>Automatique</span></li>
+            </ul>
+            <hr>
+            <div class="container-header">
+                <p class="prix"><strong>610$</strong> / <span>mois</span></p>
+                <button><i class="far fa-heart icon"></i></button>
+            </div>
+            <button type="button" class="btn">Louer Maintenant</button>
+        </div>
+
+        <div class="container-rent">
+            <div class="container-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/8jFUqFUdRUqDMwCOcYig8w"
+                    alt="BMW Série 4 GTI">
+            </div>
+            <div class="container-header">
+                <h3><a href="#">BMW Série 4 GTI</a></h3>
+                <data value="year">2016</data>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-user-friends icon"></i><span>4 Personnes</span></li>
+                <li><i class="fas fa-tachometer-alt icon"></i><span>6,1 km / 1 litre</span></li>
+                <li><i class="fas fa-car icon"></i><span>Hybride</span></li>
+                <li><i class="fas fa-gas-pump icon"></i><span>Automatique</span></li>
+            </ul>
+            <hr>
+            <div class="container-header">
+                <p class="prix"><strong>440$</strong> / <span>mois</span></p>
+                <button><i class="far fa-heart icon"></i></button>
+            </div>
+            <button type="button" class="btn">Louer Maintenant</button>
+        </div>
+
+        <div class="container-rent">
+            <div class="container-image">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/b4yz_oW2S82ltaRrwZB4gA"
+                    alt="Toyota RAV4">
+            </div>
+            <div class="container-header">
+                <h3><a href="#">Toyota RAV4</a></h3>
+                <data value="year">2018</data>
+            </div>
+            <ul class="features-list">
+                <li><i class="fas fa-user-friends icon"></i><span>4 Personnes</span></li>
+                <li><i class="fas fa-tachometer-alt icon"></i><span>6,1 km / 1 litre</span></li>
+                <li><i class="fas fa-car icon"></i><span>Hybride</span></li>
+                <li><i class="fas fa-gas-pump icon"></i><span>Automatique</span></li>
+            </ul>
+            <hr>
+            <div class="container-header">
+                <p class="prix"><strong>440$</strong> / <span>mois</span></p>
+                <button><i class="far fa-heart icon"></i></button>
+            </div>
+            <button type="button" class="btn">Louer Maintenant</button>
+        </div>
+
+
+    </section>
+    <h1>Get started with 4 simple steps
+    </h1>
+
+    <ul class="container-card">
+        <li>
+            <div class="card">
+                <div class="card-iconner icon-1">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 class="card-title">Créer un profil</h3>
+                <p class="card-text">Pour utiliser le service, créez un profil.</p>
+                <a href="#" class="card-link">Commencer</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-iconner icon-2">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3 class="card-title">Choisissez votre voiture</h3>
+                <p class="card-text">Sélectionnez la voiture qui vous convient.</p>
+                <a href="#" class="card-link">En savoir plus</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-iconner icon-3">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 class="card-title">Dites-nous ce que vous voulez</h3>
+                <p class="card-text">Partagez vos préférences pour une meilleure expérience.</p>
+                <a href="#" class="card-link">Commencer</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-iconner icon-4">
+                    <i class="far fa-address-card"></i>
+                </div>
+                <h3 class="card-title">Finalisez votre réservation</h3>
+                <p class="card-text">Complétez votre réservation en quelques étapes.</p>
+                <a href="#" class="card-link">Commencer</a>
+            </div>
+        </li>
+    </ul>
+    <!-- demo pour carouselle -->
+     <h1>Ours blogs</h1>
+    <div class="container">
+        <div class="carousel" id="container">
+            <div class="carte">
+                <article class="blog">
+                    <img src="https://danieldoussi94.github.io/Vente_voiturs/assets/images/blog-1.jpg"
+                        alt="Ouverture des nouveaux bureaux" class="image-blog">
+                    <p class="title-blog">Ouverture des nouveaux bureaux de l'entreprise</p>
+                    <div class="footer-blog">
+                        <p class="date-blog"><i class="fas fa-clock clock-icon"></i> 14 janvier 2022</p>
+                        <p class="comment-blog"><i class="fas fa-comment"></i> 5 commentaires</p>
+                    </div>
+                    <button class="btn btn-position">Entreprise</button>
+                </article>
+            </div>
+            <div class="carte">
+                <article class="blog">
+                    <img src="https://danieldoussi94.github.io/Vente_voiturs/assets/images/blog-4.jpg"
+                        alt="Ouverture des nouveaux bureaux" class="image-blog">
+                    <p class="title-blog">Ouverture des nouveaux bureaux de l'entreprise</p>
+                    <div class="footer-blog">
+                        <p class="date-blog"><i class="fas fa-clock clock-icon"></i> 14 janvier 2022</p>
+                        <p class="comment-blog"><i class="fas fa-comment"></i> 5 commentaires</p>
+                    </div>
+                    <button class="btn btn-position">Entreprise</button>
+                </article>
+            </div>
+            <div class="carte">
+                <article class="blog">
+                    <img src="https://danieldoussi94.github.io/Vente_voiturs/assets/images/blog-2.jpg"
+                        alt="Ouverture des nouveaux bureaux" class="image-blog">
+                    <p class="title-blog">Quelles voitures sont les plus vulnérables</p>
+                    <div class="footer-blog">
+                        <p class="date-blog"><i class="fas fa-clock clock-icon"></i> 23 janvier 2022</p>
+                        <p class="comment-blog"><i class="fas fa-comment"></i> 13 commentaires</p>
+                    </div>
+                    <button class="btn btn-position">Reparation</button>
+                </article>
+            </div>
+            <div class="carte">
+                <article class="blog">
+                    <img src="https://danieldoussi94.github.io/Vente_voiturs/assets/images/blog-3.jpg"
+                        alt="Ouverture des nouveaux bureaux" class="image-blog">
+                    <p class="title-blog">Ouverture des nouveaux bureaux de l'entreprise</p>
+                    <div class="footer-blog">
+                        <p class="date-blog"><i class="fas fa-clock clock-icon"></i> 14 janvier 2022</p>
+                        <p class="comment-blog"><i class="fas fa-comment"></i> 5 commentaires</p>
+                    </div>
+                    <button class="btn btn-position">Voitures</button>
+                </article>
+            </div>
+            <div class="carte">
+                <article class="blog">
+                    <img src="https://danieldoussi94.github.io/Vente_voiturs/assets/images/blog-5.jpg"
+                        alt="Ouverture des nouveaux bureaux" class="image-blog">
+                    <p class="title-blog">Que faut-il prévoir lors de la location d'une voiture ?</p>
+                    <div class="footer-blog">
+                        <p class="date-blog"><i class="fas fa-clock clock-icon"></i> 14 janvier 2022</p>
+                        <p class="comment-blog"><i class="fas fa-comment"></i> 23 commentaires</p>
+                    </div>
+                    <button class="btn btn-position">Entreprise</button>
+                </article>
+            </div>
+            <div class="carte">
+                <article class="blog">
+                    <img src="https://danieldoussi94.github.io/Vente_voiturs/assets/images/blog-4.jpg"
+                        alt="Ouverture des nouveaux bureaux" class="image-blog">
+                    <p class="title-blog">De nouvelles règles pour la conduite de nos voitures
+                    </p>
+                    <div class="footer-blog">
+                        <p class="date-blog"><i class="fas fa-clock clock-icon"></i> 14 janvier 2022</p>
+                        <p class="comment-blog"><i class="fas fa-comment"></i> 12 commentaires</p>
+                    </div>
+                    <button class="btn btn-position">Packing</button>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <input type="range" id="slider" class="slider" min="0" max="300" value="0" step="100">
+    </div>
+    <!-- footer  -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-section">
+                <div>
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Plans de tarification</a></li>
+                        <li><a href="#">Notre blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soutien</h3>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Poser une question</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Termes et conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-location">
+            <h3>Quartiers de New York</h3>
+            <ul>
+                <li><a href="#">Manhattan</a></li>
+                <li><a href="#">Centre de la ville de New York</a></li>
+                <li><a href="#">Upper East Side</a></li>
+                <li><a href="#">Reines</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Abraham Mougle. Tous droits réservés</p>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Yahoo"><i class="fab fa-yahoo"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
 </body>
+<script src="Rent.js" defer></script>
+
 </html>
