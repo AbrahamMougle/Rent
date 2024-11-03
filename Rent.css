@@ -32,6 +32,12 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
+.container-head{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
  img {
     width: 100%;
@@ -67,7 +73,12 @@ section {
     margin-right: 5px;
     
 }
-
+.navIcon{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    
+}
 .prix {
     font-size: 1.2rem;
 }
@@ -173,6 +184,7 @@ hr {
     background-color:  hsl(262, 63%, 92%);
     color:hsl(262, 60%, 57%);
  }
+ 
 
  /* Styles pour les écrans de 768px et plus (tablettes) */
 @media (max-width: 700px) {
@@ -385,20 +397,18 @@ a:hover {
    flex: 1;
 }
 
-.header-image img {
-    max-width: 350px;
+.header-image {
+    max-width: 290px;
     width: 300px;
-    height: 250px;
+    height: auto;
     border-radius: 3%;
+    flex: 1;
 }
 .input form{
     display: flex;
-
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
     padding: 10px;
-    position: relative;
-    top: 0;
 }
 
 label {
@@ -408,7 +418,7 @@ label {
 }
 .input{
     position: absolute;
-    bottom: 20%;
+    bottom: 0%;
     background-color: var(--primary-color);
     margin:10px 0;
     z-index: 1;
@@ -430,4 +440,76 @@ label {
 .header-input{
     display: flex;
 }
+header{
 
+    position: relative;
+    top: 70px;
+    bottom: -10px;
+}
+/*nav bar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    background-color: var(--primary-color);
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.1) ;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.navbar ul li {
+    margin: 0 15px; 
+}
+
+.navProfil {
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.hamburger-icon {
+    font-size: 24px; 
+    cursor: pointer; 
+}
+
+.icon-5{
+    background-color:  hsl(0, 0%, 100%);
+    color:var(--primary-color);
+    
+ }
+
+
+/*menu deroulant*/
+.dropdown-menu {
+    display: none; 
+    position: absolute; 
+    right: 0px;
+    top: 50px;
+    width: 150px;
+    height: 100vh; 
+    background-color:var(--primary-color); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px; 
+    z-index: 1000; 
+    transform: translateX(-100px); 
+    transition: width 1.2s ease-in-out, transform 0.3s ease-in;
+}
+
+.dropdown-menu.show {
+    display: block; 
+    transform: translateX(0); 
+}
+.dropdown-menu ul li{
+    margin-top: 10px;
+}
